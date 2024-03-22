@@ -1,0 +1,24 @@
+[tool.poetry]
+package-mode = false
+name = "pykirk"
+version = "0.1.0"
+description = ""
+authors = ["Jim Kutter <rwg1138@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+my_package_cli = 'pykirk.tui:run'
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.4"
+pytest = "^8.1.1"
+textual-dev = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
